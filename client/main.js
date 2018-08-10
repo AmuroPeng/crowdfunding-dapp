@@ -21,7 +21,7 @@ import './main.html';
 //   },
 // });
 
-Template.body.helpers({
+Template.main.helpers({
   items: function(){
     return ProjectsCollection.find();
   },

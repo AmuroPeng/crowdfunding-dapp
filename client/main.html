@@ -6,12 +6,13 @@
   </head>
 
   <body>
-    {{> search}}
-    <hr> {{#each items}}
-    <li>{{> item}}</li>
-    {{/each}}
+
   </body>
 <template name='main'>
+    {{> search}}<hr> 
+    {{#each items}}
+    <li>{{> item}}</li>
+    {{/each}}
 </template>
 
 <template name="search">
