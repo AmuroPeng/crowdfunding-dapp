@@ -1,0 +1,18 @@
+<template name='user'>
+    {{#each user}}
+    <li>{{> user_detail}}</li>
+    {{/each}}
+</template>
+
+<template name='user_detail'>
+    <hr>个人信息<br>
+    昵称：{{name}}<br>
+    公钥：{{id}}<br>
+    头像：<img src={{pic}} alt="avatar"><br>
+    简介：{{intro}}<br>
+    <hr>我的账户<br>
+    余额：{{balance}}
+    <hr>我的订单<br>
+    <hr>我的项目<br>
+    <hr>个人设置<br>
+</template>
