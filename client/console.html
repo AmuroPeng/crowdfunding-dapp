@@ -1,0 +1,22 @@
+<template name='console'>
+    {{#each projects}}
+    <li>{{> project_order}}</li>
+    {{/each}}
+</template>
+
+<template name='project_order'>
+    <br>订单信息
+    <br> id:{{id}}
+    <br> title:<a href="/project/{{id}}">{{title}}</a>
+    <!-- <br> <img src={{pic}} alt="avatar"> -->
+    <!-- <br> intro:{{intro}} -->
+    <br> author_id:{{author_id}}
+    <br> time:{{time}}
+    <!-- <br> locate:{{locate}} -->
+    <!-- <br> tag:{{tag}} -->
+    <!-- <br> expected_money:{{expected_money}} -->
+    <!-- <br> current_monry:{{current_monry}} -->
+    <!-- <br> support_num:{{support_num}} -->
+    <br> status:{{status}}
+    <button type="button" name="check">审核通过</button>
+</template>
