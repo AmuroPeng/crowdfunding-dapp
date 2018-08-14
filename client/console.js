@@ -15,13 +15,16 @@ import './main.html';
 // });
 
 Template.project_order.events({
-  'check'(event, instance) {
-    ProjectsCollection.update();
+  'click button'(event, template) {
+    // var project_id = template.$('#check').val();
+    // var project_id = this.id;
+    var person = ProjectsCollection.findOne({id:this.id});
+    ProjectsCollection.update({_id: person._id}, { $set: { status: 'doing' } });
   },
 });
 
 Template.console.helpers({
-  projects: function(){
-    return ProjectsCollection.find({status:'checking'});
+  projects: function () {
+    return ProjectsCollection.find({ status: 'checking' });
   },
 });
