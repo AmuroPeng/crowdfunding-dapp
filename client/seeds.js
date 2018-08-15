@@ -1,4 +1,5 @@
 var num = -1
+// var num = 0
 
 //状态：待审核checking，审核未通过failed，暂停paused，进行中doing，已结束closed
 if (ProjectsCollection.find().count() === num){

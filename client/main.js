@@ -23,6 +23,6 @@ import './main.html';
 
 Template.main.helpers({
   items: function(){
-    return ProjectsCollection.find();
+    return ProjectsCollection.find({status:'doing'});
   },
 });
