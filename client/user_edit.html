@@ -1,0 +1,18 @@
+<head>
+    <meta charset="utf-8" />
+    <title>编辑个人资料</title>
+</head>
+
+<template name='user_edit'>
+    {{#each user_edit}}
+    <li>{{> user_detail_edit}}</li>
+    {{/each}}
+</template>
+
+<template name='user_detail_edit'>
+    <hr>个人信息<br>
+    昵称：<input type="text" name="name" id="name" placeholder="{{name}}"><br>
+    头像：<img name="img" id="img" src={{pic}} alt="avatar"><br>
+    简介：<input type="text" name="intro" id="intro" placeholder="{{intro}}"><br>
+    <button type="button" id="button">更新信息</button>
+</template>

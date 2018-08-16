@@ -32,7 +32,7 @@ Template.create_project.events({
     // var project_id = this.id;
     // var person = ProjectsCollection.findOne({id:this.id});
     ProjectsCollection.insert({ id: id, title: title, intro: intro, author_id: author_id, time: time, locate: locate, tag: tag, expected_money: expected_money, status: 'checking' });
-    console.log(tag);
+    Router.go('/user')
   },
 });
 
