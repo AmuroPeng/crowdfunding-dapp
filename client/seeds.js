@@ -13,7 +13,7 @@ if (ProjectsCollection.find().count() === num){
         locate:'拉萨市',
         tag:'酒店',
         expected_money:100000,
-        current_monry:2112000,
+        current_money:2112000,
         support_num:28,
         status:'checking'
     });
@@ -27,7 +27,7 @@ if (ProjectsCollection.find().count() === num){
         locate:'浦东新区',
         tag:'餐饮',
         expected_money:50000,
-        current_monry:1800000,
+        current_money:1800000,
         support_num:30,
         status:'doing'
     });
@@ -41,7 +41,7 @@ if (ProjectsCollection.find().count() === num){
         locate:'成都市',
         tag:'餐饮',
         expected_money:100000,
-        current_monry:2105000,
+        current_money:2105000,
         support_num:70,
         status:'closed'
     });
