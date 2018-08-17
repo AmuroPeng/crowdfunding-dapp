@@ -17,8 +17,8 @@ import './console.html';
 Template.project_order.events({
   'click button'(event, template) {
     var status_option = template.$('#verify_option').val();
-    // var project_id = this.id;
-    var person = ProjectsCollection.findOne({id:this.id});
+    // var project_id = tthis.id;
+    var person = ProjectsCollection.findOne({_id:this._id});
     ProjectsCollection.update({_id: person._id}, { $set: { status: status_option } });
   },
 });
