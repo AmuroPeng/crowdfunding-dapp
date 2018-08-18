@@ -1,19 +1,30 @@
 <head>
 <meta charset="utf-8" />
 <title>管理界面</title>
+ <!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <template name='console'>
+ <div class="container">
+ <div class="row">
     {{#each projects}}
-    <li>{{> project_order}}</li>
+     <div class="col-md-6 height:400px">{{> project_order}}</div>
     {{/each}}
+</div>
+</div>
 </template>
 
 <template name='project_order'>
     <br>订单信息
     <br> _id:{{_id}}
     <br> id:{{id}}
-    <br> title:<a href="/project/{{id}}">{{title}}</a>
+    <br> title:<a href="/project/detail/{{id}}">{{title}}</a>
     <!-- <br> <img src={{pic}} alt="avatar"> -->
     <!-- <br> intro:{{intro}} -->
     <br> author_id:{{author_id}}

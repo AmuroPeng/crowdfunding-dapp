@@ -1,9 +1,17 @@
 <head>
     <meta charset="utf-8" />
     <title>新建项目</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
+<!--
 <template name='create_project'>
+
+
     <form action="form-add">
         <h1>项目详细信息</h1>
         id:<input type="text" id="id"><br> title:
@@ -11,11 +19,84 @@
         <br> intro:
         <input type="text" id="intro"><br> author_id:
         <input type="text" id="author_id"><br> time:
-        <input type="datetime-local" id="time"><br> locate:
+        <input type="text" id="time"><br> locate:
         <input type="text" id="locate"><br> tag:
         <input type="text" id="tag"><br> expected_money:
         <input type="text" id="expected_money"><br>
         <button type="button" id="button">提交项目</button>
         <br>
     </form>
+</template>
+-->
+<template name='create_project'>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<h2 class="text-center">
+		    	发起项目
+			</h2>
+                        <h3 class="text-center">
+                        让一切从这里开始
+                        </h3>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<form class="form-inline" role="form">
+				<div class="form-group">
+					 <label>id</label>
+                        <input type="text" id="id">				
+                </div>
+                <br>
+				<div class="form-group">
+					 <label>项目名称</label>
+                                         <input type="text" id="title">				
+                 </div>
+                <br>
+                <div class="form-group">
+              		 <label>项目地点</label>
+                                         <input type="text" id="locate">				
+                 </div>
+                 <br>
+                <div class="form-group">
+					 <label>标签</label>
+                                          <input type="text" id="tag">				
+                 </div>
+                 <br>
+                <div class="form-group">
+					 <label>预计众筹金额</label>
+                                         <input type="text" id="expect_money">				
+                 </div>
+			         <br>
+		
+               	 <div class="form-group">
+			                <label for="exampleInputFile">项目图片</label><input id="exampleInputFile" type="file" />
+				         <p class="help-block">请将图片像素大小调至680x382</p>
+			     </div>
+                     <br>
+                 <div class="form-group">
+					 <label>项目简介</label>
+                                           <input type="text" id="intro">				
+                 </div>
+                     <br>
+                 <div class="form-group">
+					 <label>发起者</label>
+                                           <input type="text" id="author_id">				
+                </div>
+                     <br>
+                <div class="form-group">
+					 <label>持续时间</label>
+                                           <input type="datetime-local" id="time">				
+                </div>  
+                                 <br>                              
+				<div class="checkbox">
+					 <label><input type="checkbox" />Check me out</label>
+				</div> 
+                                 <br>
+                               <button class="btn btn-default" type="submit">提交项目</button>
+            </form>
+        </div>
+	</div>
+</div>
+
 </template>
